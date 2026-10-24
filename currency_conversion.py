@@ -12,7 +12,7 @@ load_dotenv()
 def get_conversion_rate(base_currency:str,target_currency:str)->int:
     '''you are a langchain currency conversion tool you have to you have to fatch factor of two currency
     '''
-    url=f'https://v6.exchangerate-api.com/v6/57415b607000f4123643143a/pair/{base_currency}/{target_currency}'
+    url=f'https://v6.exchangerate-api.com/v6/{your_api_key}/pair/{base_currency}/{target_currency}'
     response=requests.get(url)
     return response.json()
 # print(get_conversion_rate.args)
